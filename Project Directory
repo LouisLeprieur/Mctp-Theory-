@@ -1,6 +1,0 @@
-# Create main project directory
-mkdir mctp-theory
-cd mctp-theory
-
-# Initialize git repository
-git init
