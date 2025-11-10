@@ -5,14 +5,17 @@ A unified framework for information optimization across quantum, neural, and cos
 ## Quick Start
 
 ```python
-import mctp_theory as mctp
+from mctp_theory import MCTP_Action, CrossDomainValidator, DataLoader
 
-# Load the framework
-framework = mctp.MCTP_Framework()
+# Test the complete framework
+mctp = MCTP_Action()
+validator = CrossDomainValidator() 
+data_loader = DataLoader()
 
-# Estimate C_U from quantum data
-c_u = framework.estimate_universal_constant(domain='quantum')
+# Run cross-domain validation
+quantum_data = data_loader.load_quantum_data()
+neural_data = data_loader.load_neural_data()
+cosmic_data = data_loader.load_cosmic_data()
 
-# Predict neural and cosmic correlations
-neural_pred = framework.predict_neural_correlation(c_u)
-cosmic_pred = framework.predict_cosmic_correlation(c_u)
+results = validator.full_validation(quantum_data, neural_data, cosmic_data)
+print(validator.generate_report())
