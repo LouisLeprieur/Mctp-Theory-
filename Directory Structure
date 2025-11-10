@@ -1,7 +1,0 @@
-# Create all necessary directories
-mkdir -p data/quantum data/neural data/cosmic
-mkdir -p code/theoretical code/analysis code/visualization
-mkdir -p papers docs tests
-
-# Verify structure
-find . -type d | sort
