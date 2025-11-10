@@ -1,0 +1,7 @@
+processor,qubits,connectivity,symmetry_score,T1_mean,T2_mean,quantum_volume
+ibm_sherbrooke,127,heavy_hex,0.71,175.2,176.8,128
+ibm_montreal,27,heavy_hex,0.56,142.3,148.5,64
+ibm_kyiv,127,heavy_hex,0.72,168.7,172.3,128
+ibm_torino,127,heavy_hex,0.75,171.8,174.9,128
+ibm_strasbourg,133,heavy_hex,0.77,169.5,173.2,128
+ibm_brisbane,127,heavy_hex,0.68,166.2,169.8,128
